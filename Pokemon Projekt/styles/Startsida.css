@@ -1,0 +1,182 @@
+/* Alla Element*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  background-color: #b37e70;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+/* Body */
+body {
+  background: linear-gradient(to right, #ea877d, #7ddfea, #d9f18b);
+  font-family: "sans-serif", arial;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.pokeball-img {
+  width: 20%;
+}
+.paragraph {
+  text-align: center;
+}
+
+.search-input {
+  text-align: center;
+  border: 2px #eee;
+  margin: 0;
+  width: 25%;
+  margin-left: 37%;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 30px;
+}
+
+.search-button {
+  text-align: center;
+  border: 2px #eee;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.clear-button {
+  text-align: center;
+  border: 2px #eee;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 6%;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
+
+td,
+th {
+  padding: 6px;
+  text-align: left;
+  color: black;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .links {
+    width: 60%;
+  }
+
+  .clear-button {
+    width: 9%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  /*Koden nedan har jag tagit från boken "Responsive Web Design in 24 Hours" 2014, /sida 231
+    Författare: Jennifer Kyrnin  
+    
+    Jag anpassade den till min kod genom att fylla i det som skulle ha varit i
+    min th cell, 
+    */
+
+  td:nth-of-type(1):before {
+    content: "Name: ";
+  }
+  td:nth-of-type(2):before {
+    content: "Type: ";
+  }
+  td:nth-of-type(3):before {
+    content: "Attack: ";
+  }
+  td:nth-of-type(4):before {
+    content: "Defense: ";
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .clear-button {
+    margin: 0;
+    width: 6%;
+  }
+
+  .search-input {
+    margin-left: 25%;
+    width: 30%;
+  }
+
+  .clear-button {
+    width: 17%;
+  }
+
+  .image {
+    display: flex;
+  }
+  .pokeball-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 20%;
+    border-radius: 20%;
+  }
+}

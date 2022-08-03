@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DHM</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/Startsida.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h4>PokeDex</h4>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Bild hämtad ifrån https://pixabay.com/sv/illustrations/pokemon-pokeball-pokemon-g%C3%A5-1536849/-->
+      <div class="image">
+        <img
+          src="img/pokemon-1702772_1920.png"
+          class="pokeball-img"
+          alt="En pokemon boll"
+        />
+      </div>
+
+      <div class="paragraph">
+        <h2 id="error"><b>search your pokemon</b></h2>
+      </div>
+      <form id="search-form">
+        <div class="placement">
+          <input
+            id="search"
+            class="search-input"
+            type="search"
+            placeholder="Name"
+          />
+          <button type="submit" class="search-button">Search</button>
+          <button type="reset" class="clear-button">Clear</button>
+        </div>
+      </form>
+      <div class="m-2">
+        <table class="table table-fixed" id="table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Attack</th>
+              <th>Defense</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="Startsida.js"></script>
+  </body>
+</html>
